@@ -1,0 +1,3267 @@
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+.container {
+  max-width: 1300px;
+}
+
+#scooterBanner {
+  margin-top: 95px;
+  .scooter-banner-slide {
+    position: relative;
+    .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+    }
+    .banner-img {
+      object-fit: cover;
+      object-position: center;
+    }
+    .slider-content {
+      position: absolute;
+      bottom: 100px;
+      left: 0;
+      width: 100%;
+      padding-left: 100px;
+      font-size: var(--font-size16);
+      z-index: 3;
+      h1 {
+        font-size: var(--font-size48);
+        font-weight: var(--font-weight-900);
+        font-family: var(--font-tstar-heavy);
+
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
+      p {
+        max-width: 280px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .carousel-indicators {
+    bottom: 40px;
+    z-index: 3;
+    margin: 0;
+    padding-left: 100px;
+    li {
+      background-color: #f5f6f7;
+      &.active {
+        background: var(--bg-color-danger);
+      }
+    }
+  }
+  .scroll-button {
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+
+    img {
+      transition: all 300ms ease-in;
+    }
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.scooter-rotate-section {
+  background: linear-gradient(
+    180deg,
+    #ffe598 0%,
+    rgba(255, 255, 255, 0.49) 34.63%
+  );
+  &.maestro-110 {
+    background: linear-gradient(
+      180deg,
+      #ffb8be 0%,
+      rgba(255, 255, 255, 0.49) 34.63%
+    );
+  }
+  &.destini-xtech {
+    background: linear-gradient(180deg, #99d5ff 0%, #ffffff 22.91%);
+  }
+  &.destini-125 {
+    background: linear-gradient(180deg, #ffb8c2 0%, #ffffff 22.91%);
+  }
+  padding-bottom: 50px;
+  h2 {
+    font-family: var(--font-tstar-heavy);
+  }
+  .bike-rotate-wrapper {
+    display: flex;
+    padding: 0 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+    .bike-rotate-color-section {
+      flex: 0 0 20%;
+      max-width: 20%;
+      .title-text {
+        color: #70a928;
+        font-family: var(--font-montserrat-bold);
+        margin-bottom: 10px;
+        padding-left: 10px;
+      }
+      .nav-tabs {
+        flex-direction: column;
+        border: 0;
+        max-height: 420px;
+        flex-wrap: nowrap;
+        overflow-y: auto;
+        direction: rtl;
+        .nav-item {
+          direction: ltr;
+          .nav-link {
+            border: 0;
+            font-family: var(--font-tstar-heavy);
+            font-size: var(--font-size32);
+
+            background: linear-gradient(
+              180deg,
+              #333333 0%,
+              rgba(51, 51, 51, 0) 167.72%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            opacity: 0.6;
+            &.active {
+              background: none;
+              -webkit-background-clip: unset;
+              -webkit-text-fill-color: unset;
+              background-clip: unset;
+              text-fill-color: unset;
+              opacity: 1;
+              &.yellow {
+                color: #ffbe00;
+              }
+              &.black {
+                color: #1c1c1c;
+              }
+              &.red {
+                color: #ff1a1d;
+              }
+              &.blue {
+                color: #0087d4;
+              }
+              &.purple {
+                color: #936188;
+              }
+              &.white {
+                color: #dfdfdf;
+              }
+              &.candy-blazing-red {
+                color: #c80819;
+              }
+              &.mid-night-blue {
+                color: #0068ad;
+              }
+              &.seal-silver {
+                color: #999d9e;
+              }
+
+              &.special-edition-red {
+                color: #ca2932;
+              }
+              &.techno-blue {
+                color: #0081be;
+              }
+              &.nexus-blue {
+                color: #0083de;
+              }
+              &.matte-black {
+                color: #141414;
+              }
+              &.nobel-red {
+                color: #e3090f;
+              }
+              &.chestnut-brown {
+                color: #954535;
+              }
+
+              &.matte-ray-silver {
+                color: #dfdbd8;
+              }
+              &.jubliant-yellow {
+                color: #e9a400;
+              }
+              // &. {
+              //   color: ;
+              // }
+            }
+          }
+        }
+      }
+    }
+    .explore-360-wrapper-main {
+      flex: 0 0 60%;
+      max-width: 60%;
+      position: relative;
+      .rotate-arrow {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        &.right-arrow {
+          left: auto;
+          right: 40px;
+        }
+      }
+      .explore-360-view {
+        margin: 0 auto;
+        position: relative;
+      }
+    }
+    .rotate-bike-info {
+      flex: 0 0 20%;
+      max-width: 20%;
+      .rotate-bike-div {
+        display: flex;
+        max-width: 200px;
+        img {
+          margin-right: 10px;
+        }
+        & + .rotate-bike-div {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+.scooter-specifications {
+  .inner {
+    .content {
+      padding: 50px 40px;
+      h2 {
+        font-size: var(--font-size48);
+        font-weight: var(--font-weight-900);
+        font-family: var(--font-tstar-heavy);
+        .text-danger {
+          color: var(--text-color-danger-red) !important;
+        }
+      }
+      .sub-text {
+        font-size: var(--font-size18);
+        max-width: 480px;
+      }
+      .specifications-list {
+        margin: 50px 0;
+        li {
+          flex: 0 0 33%;
+          margin-bottom: 30px;
+          font-size: var(--font-size14);
+          h4 {
+            font-size: var(--font-size20);
+          }
+          .icon-box {
+            margin-right: 10px;
+          }
+        }
+      }
+      .action {
+        position: relative;
+        .share-btn{
+          cursor: pointer;
+        }
+        .share-options {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #000000;
+          padding: 5px 10px;
+          border-radius: 5px;
+          transition: all 300ms ease-in;
+          visibility: hidden;
+          opacity: 0;
+          
+          &.active {
+            opacity: 1;
+            visibility: visible;
+            top: -100%;
+            transition: all 300ms ease-in;
+          }
+        }
+      }
+    }
+    .img-box {
+      flex: 0 0 45%;
+      max-width: 38%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.hero-ride-section {
+  margin-top: 50px;
+  &.scooter-ride-maestro {
+    .hero-ride-wrapper {
+      background: var(--bg-color-yellow);
+    }
+    &.maestro-110 {
+      .hero-ride-wrapper {
+        background-color: #ff5f66;
+        color: var(--text-color-white);
+      }
+    }
+    &.destini-125-xtech {
+      .hero-ride-wrapper {
+        background: linear-gradient(267.74deg, #4b65c4 1.71%, #f35e62 99.51%);
+        color: var(--text-color-white);
+      }
+    }
+    &.destini-125 {
+      .hero-ride-wrapper {
+        background: linear-gradient(267.74deg, #7a1729 1.71%, #fe4a4f 99.51%);
+        color: var(--text-color-white);
+      }
+    }
+  }
+}
+
+.prise-section {
+  &.scooter-price-maestro {
+    background: url(../images/scooters/pricing-bg.png) no-repeat center;
+    background-size: cover;
+    max-width: 1400px;
+    margin: 0 auto;
+    .prise-wrapper {
+      .prise-right-div {
+        padding-top: 0;
+        line-height: 0;
+      }
+      .prise-left-div {
+        padding: 18px 0 18px 100px;
+        max-width: 900px;
+        h2 {
+          font-family: var(--font-tstar-heavy);
+        }
+        .prise-h3 {
+          padding-top: 0;
+        }
+      }
+    }
+    .prise-form-content {
+      .common-cta {
+        padding: 30px 0px;
+      }
+    }
+  }
+}
+
+.hero-exchange {
+  &.hero-exchange-maestro {
+    .hero-exchange-content {
+      padding-left: 0;
+    }
+    .hero-exchange-wrapper {
+      background: var(--bg-color-yellow);
+      .hero-exchange-content {
+        .hero-exchange-head-content {
+          padding: 0px 95px 20px 98px;
+        }
+      }
+      .restart-india-load {
+        .hero-exchange-head-content {
+          .common-cta {
+            .common-cta-load-p {
+              padding-left: 20px;
+              .common-cta-load-span {
+                padding-left: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.maestro-110 {
+      .hero-exchange-wrapper {
+        background: #ff5a66;
+        color: var(--text-color-white);
+        p {
+          color: var(--text-color-white) !important;
+          .common-cta-load-span {
+            color: var(--text-color-white) !important;
+          }
+        }
+      }
+    }
+    &.destini-125-xtech {
+      .hero-exchange-wrapper {
+        background: linear-gradient(267.74deg, #4b65c4 1.71%, #f35e62 99.51%);
+        color: var(--text-color-white);
+        p {
+          color: var(--text-color-white) !important;
+          .common-cta-load-span {
+            color: var(--text-color-white) !important;
+          }
+        }
+      }
+    }
+    &.destini-125 {
+      .hero-exchange-wrapper {
+        background: linear-gradient(267.74deg, #7a1729 1.71%, #fe4a4f 99.51%);
+        color: var(--text-color-white);
+        p {
+          color: var(--text-color-white) !important;
+          .common-cta-load-span {
+            color: var(--text-color-white) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.emi-section {
+  &.emi-scooter-maestro {
+    .emi-wrapper {
+      .payment-section {
+        background-image: url(../images/scooters/maestro/bg-emi.png);
+      }
+    }
+  }
+  &.destini-125-xtech {
+    .emi-wrapper {
+      .payment-section {
+        background-image: url(../images/scooters/destini-125-xtech/img-3.png);
+      }
+    }
+  }
+  &.destini-125 {
+    .emi-wrapper {
+      .payment-section {
+        background-image: url(../images/scooters/destini-125/emi-bg.png);
+      }
+    }
+  }
+  &.maestro-110 {
+    .emi-wrapper {
+      .payment-section {
+        background-image: url(../images/scooters/maestro-110/img-4.png);
+      }
+    }
+  }
+
+  &.pleasure-plus-xtech {
+    .emi-wrapper {
+      .payment-section {
+        background-image: url(../images/scooters/pleasure-plus-xtech/pleasure-emi-bg.png);
+      }
+    }
+  }
+}
+
+.news-n-blogs {
+  &.news-n-blogs-scooter {
+    background-color: var(--text-color-white) !important ;
+    margin-top: -5px;
+    .event-blog-box {
+      .content {
+        max-width: calc(100% - 10px);
+        max-height: calc(100% - 10px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.product-highlighted-features {
+  padding: 50px 0;
+  .nav-tabs {
+    border-bottom: 0;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    .nav-item {
+      flex-grow: 1;
+
+      .nav-link {
+        background-color: var(--text-color-white);
+        border-radius: 16px;
+        width: 100%;
+        display: flex;
+        font-weight: var(--font-weight-700);
+        text-align: left;
+        align-items: center;
+        color: var(--text-color-black);
+        white-space: nowrap;
+        .icon {
+          margin-right: 10px;
+        }
+        &.active,
+        &:hover {
+          background: rgba(112, 169, 40, 0.4);
+          font-family: var(--font-tstar-heavy);
+          color: var(--text-color-black);
+        }
+      }
+    }
+  }
+  .tab-inner {
+    display: flex;
+    align-items: center;
+    .info-panel {
+      flex: 0 0 50%;
+      max-width: 50%;
+      h4 {
+        font-size: var(--font-size28);
+      }
+      h2 {
+        font-size: var(--font-size52);
+        font-family: var(--font-tstar-heavy);
+        max-width: 400px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: var(--font-size24);
+        max-width: 500px;
+      }
+    }
+    .img-panel {
+      flex: 0 0 50%;
+      max-width: 50%;
+      img {
+        display: inline-block;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.designed-for-roads {
+  background-color: var(--bg-color-grey-2);
+  padding: 50px 0;
+  .inner {
+    .left {
+      h2 {
+        font-size: var(--font-size48);
+        font-family: var(--font-tstar-heavy);
+        max-width: 300px;
+        line-height: 1.2;
+      }
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+    .right {
+      flex: 0 0 60%;
+      max-width: 60%;
+      .road-feature {
+        padding: 0 15px;
+        h4 {
+          font-family: var(--font-montserrat-bold);
+          font-weight: var(--font-weight-700);
+          margin-bottom: 10px;
+          font-size: var(--font-size20);
+        }
+        p {
+          font-family: var(--font-montserrat-regular);
+          font-weight: var(--font-weight-400);
+          color: var(--text-color-grey);
+          font-size: var(--font-size16);
+        }
+      }
+    }
+  }
+}
+.hero-connect-benefits {
+  .carousel-indicators {
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    margin: 0;
+    z-index: 4;
+    border-left: 1px solid var(--text-color-white);
+    bottom: auto;
+    right: auto;
+    li {
+      width: auto;
+      height: auto;
+      background: transparent !important;
+      transform: none;
+      display: inline-flex;
+      opacity: 0.5;
+      color: var(--text-color-white);
+      margin-bottom: 10px;
+      padding-left: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin: 0;
+      position: relative;
+      text-indent: 0%;
+      align-items: center;
+      img {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      &::before {
+        content: none;
+        position: absolute;
+        top: 0;
+        left: -2px;
+        width: 3px;
+        background-color: #fff;
+        height: 100%;
+        display: inline-block;
+        border-radius: 3px;
+        z-index: 2;
+      }
+      &.active {
+        opacity: 1;
+        &::before {
+          content: "";
+        }
+      }
+    }
+  }
+  .carousel-item {
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    h2 {
+      position: absolute;
+      top: 20px;
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: var(--font-size48);
+      font-family: var(--font-tstar-heavy);
+      color: var(--text-color-white);
+      width: 100%;
+      text-align: center;
+    }
+    h3 {
+      position: absolute;
+      bottom: 75px;
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: var(--font-size48);
+      font-family: var(--font-montserrat-bold);
+      color: rgba(0, 0, 0, 0.8);
+      text-shadow: -1px 1px 0 var(--text-color-white),
+        1px 1px 0 var(--text-color-white), 1px -1px 0 var(--text-color-white),
+        -1px -1px 0 var(--text-color-white);
+      width: 100%;
+    }
+  }
+}
+
+.compare-bike-section {
+  &.compare-scooter-section {
+    .compare-bike-common-cta {
+    }
+    padding: 20px 0px 0;
+  }
+}
+
+.features-section-main {
+  &.scooter-features-main {
+    padding-top: 25px;
+    h2 {
+      font-family: var(--font-tstar-heavy);
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: var(--font-size48);
+      font-style: italic;
+    }
+    &.masetro-scooter {
+      background: url(../images/scooters/maestro/features-bg.png) no-repeat
+        right bottom;
+      background-size: cover;
+      &.maestro-110 {
+        background-image: url(../images/scooters/maestro-110/scooter-bg.png);
+      }
+    }
+    &.pleasure-xtech {
+      background-image: url(../images/scooters/pleasure-plus-xtech/features-bg.png);
+    }
+    &.destini-125 {
+      background-image: url(../images/scooters/destini-125/features-bg.png);
+    }
+    &.destini-125-xtech {
+      background-image: url(../images/scooters/destini-125-xtech/features-bg.png);
+    }
+    .features-section-wrapper {
+      justify-content: flex-end;
+      .features-box-wrapper {
+        .features-box-main {
+          .features-box {
+            background: #ffffff;
+            box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+            border-radius: 5px;
+            z-index: 2;
+            &::before,
+            &::after {
+              background-color: #000000;
+            }
+            &.feature-1.active::before {
+              height: 113px;
+              left: 120px;
+              top: 306px;
+            }
+            &.feature-1.active::after {
+              left: auto;
+              right: 134px;
+              width: 333px;
+              top: 417px;
+            }
+            &.feature-2.active::before {
+              height: 175px;
+              left: 120px;
+              top: 307px;
+            }
+            &.feature-2.active::after {
+              left: auto;
+              top: 482px;
+              right: 134px;
+              width: 605px;
+            }
+            &.feature-3.active::before {
+              width: 2px;
+              height: 123px;
+              left: 120px;
+              top: 307px;
+            }
+            &.feature-3.active::after {
+              left: auto;
+              right: 134px;
+              top: 429px;
+              width: 590px;
+            }
+            &.feature-4.active::before {
+              content: none;
+            }
+            &.feature-4.active::after {
+              left: auto;
+              right: 134px;
+              width: 481px;
+              top: 70px;
+            }
+            &.feature-5.active::before {
+              height: 47px;
+              left: 120px;
+              top: 282px;
+            }
+            &.feature-5.active::after {
+              left: auto;
+              right: 134px;
+              width: 520px;
+              top: 327px;
+            }
+            &.feature-6.active::before {
+              content: none;
+            }
+            &.feature-6.active::after {
+              height: 2px;
+              left: auto;
+              right: 255px;
+              width: 400px;
+              top: 108px;
+            }
+            > img {
+              width: 100%;
+            }
+            .features-box-info {
+              p {
+                font-family: var(--font-tstar-bold);
+                font-size: var(--font-size18);
+                font-style: normal;
+              }
+              h4 {
+                font-size: var(--font-size28);
+                font-family: var(--font-tstar-heavy);
+              }
+              .badge {
+                justify-content: flex-start;
+              }
+            }
+          }
+        }
+      }
+
+      .features-bike-main {
+        margin-bottom: 0;
+        padding-right: 100px;
+        .feature-btn {
+          &.btn-1 {
+            top: 399px;
+            left: 338px;
+          }
+          &.btn-2 {
+            top: auto;
+            bottom: 50px;
+            right: auto;
+            left: 65px;
+          }
+          &.btn-3 {
+            top: auto;
+            bottom: 100px;
+            right: auto;
+            left: 80px;
+          }
+          &.btn-4 {
+            top: 50px;
+            right: auto;
+            left: 190px;
+          }
+          &.btn-5 {
+            top: auto;
+            bottom: 200px;
+            right: auto;
+            left: 150px;
+          }
+          &.btn-6 {
+            top: 90px;
+            right: auto;
+            left: 150px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// pleaseure xtech
+.features-section-main {
+  &.scooter-features-main {
+    &.pleasure-xtech {
+      .features-section-wrapper {
+        justify-content: flex-end;
+        .features-box-wrapper {
+          .features-box-main {
+            .features-box {
+              &.feature-1.active::before {
+                height: 115px;
+                left: 120px;
+                top: 283px;
+              }
+              &.feature-1.active::after {
+                right: 134px;
+                width: 332px;
+                top: 396px;
+              }
+              &.feature-2.active::before {
+                height: 153px;
+                left: 120px;
+                top: 283px;
+              }
+              &.feature-2.active::after {
+                top: 434px;
+                right: 135px;
+                width: 590px;
+              }
+              &.feature-3.active::before {
+                content: none;
+              }
+              &.feature-3.active::after {
+                right: 135px;
+                top: 145px;
+                width: 470px;
+              }
+              &.feature-4.active::before {
+                content: none;
+              }
+              &.feature-4.active::after {
+                right: 135px;
+                width: 430px;
+                top: 87px;
+              }
+              &.feature-5.active::before {
+                content: none;
+              }
+              &.feature-5.active::after {
+                right: 135px;
+                width: 450px;
+                top: 260px;
+              }
+            }
+          }
+        }
+
+        .features-bike-main {
+          .feature-btn {
+            &.btn-1 {
+              top: 380px;
+              left: 300px;
+            }
+            &.btn-2 {
+              bottom: 50px;
+              left: 40px;
+            }
+            &.btn-3 {
+              top: auto;
+              bottom: 340px;
+              right: auto;
+              left: 160px;
+            }
+            &.btn-4 {
+              top: 70px;
+              right: auto;
+              left: 200px;
+            }
+            &.btn-5 {
+              top: auto;
+              bottom: 225px;
+              right: auto;
+              left: 180px;
+            }
+            &.btn-6 {
+              top: 90px;
+              right: auto;
+              left: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// maestro 110
+.features-section-main {
+  &.scooter-features-main {
+    &.maestro-110 {
+      .features-section-wrapper {
+        .features-box-wrapper {
+          .features-box-main {
+            .features-box {
+              &.feature-1.active::before {
+                height: 50px;
+                left: 120px;
+                top: 308px;
+              }
+              &.feature-1.active::after {
+                left: auto;
+                right: 134px;
+                width: 300px;
+                top: 357px;
+              }
+              &.feature-2.active::before {
+                height: 133px;
+                left: 120px;
+                top: 308px;
+              }
+              &.feature-2.active::after {
+                top: 439px;
+                right: 134px;
+                width: 580px;
+              }
+              &.feature-3.active::before {
+                height: 53px;
+                left: 120px;
+                top: 308px;
+              }
+              &.feature-3.active::after {
+                right: 134px;
+                top: 360px;
+                width: 560px;
+              }
+              &.feature-4.active::before {
+                content: "";
+                height: 100px;
+                left: -348px;
+                top: 65px;
+              }
+              &.feature-4.active::after {
+                right: 203px;
+                width: 400px;
+                top: 163px;
+              }
+              &.feature-5.active::before {
+                height: 15px;
+                left: 120px;
+                top: 283px;
+              }
+              &.feature-5.active::after {
+                right: 134px;
+                width: 506px;
+                top: 298px;
+              }
+              &.feature-6.active::before {
+                content: none;
+              }
+              &.feature-6.active::after {
+                right: 255px;
+                width: 330px;
+                top: 258px;
+              }
+            }
+          }
+        }
+
+        .features-bike-main {
+          .feature-btn {
+            &.btn-1 {
+              top: 340px;
+              left: 340px;
+            }
+            &.btn-2 {
+              bottom: 20px;
+              left: 60px;
+            }
+            &.btn-3 {
+              bottom: 100px;
+              left: 80px;
+            }
+            &.btn-4 {
+              top: 30px;
+              left: 190px;
+            }
+            &.btn-5 {
+              bottom: 160px;
+              left: 135px;
+            }
+            &.btn-6 {
+              top: 240px;
+              left: 190px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//destini-125-xtech
+.features-section-main {
+  &.scooter-features-main {
+    &.destini-125-xtech {
+      .features-section-wrapper {
+        .features-box-wrapper {
+          .features-box-main {
+            .features-box {
+              &.feature-1.active::before {
+                height: 125px;
+                left: 120px;
+                top: 308px;
+              }
+              &.feature-1.active::after {
+                right: 134px;
+                width: 344px;
+                top: 433px;
+              }
+              &.feature-2.active::before {
+                content: none;
+              }
+              &.feature-2.active::after {
+                top: 157px;
+                right: 175px;
+                width: 500px;
+              }
+              &.feature-3.active::before {
+                content: none;
+              }
+              &.feature-3.active::after {
+                top: 113px;
+                right: 140px;
+                width: 500px;
+              }
+
+              &.feature-4.active::after {
+                right: 203px;
+                width: 466px;
+                top: 280px;
+              }
+              &.feature-5.active::before {
+                content: none;
+              }
+              &.feature-5.active::after {
+                top: 127px;
+                right: 110px;
+                width: 382px;
+              }
+              &.feature-6.active::before {
+                content: none;
+              }
+              &.feature-6.active::after {
+                right: 100px;
+                width: 288px;
+                top: 207px;
+              }
+            }
+          }
+        }
+
+        .features-bike-main {
+          .feature-btn {
+            &.btn-1 {
+              top: 415px;
+              left: 450px;
+            }
+            &.btn-2 {
+              bottom: 245px;
+              left: 260px;
+            }
+            &.btn-3 {
+              left: 290px;
+              bottom: auto;
+              top: 95px;
+            }
+            &.btn-4 {
+              top: 140px;
+              left: 255px;
+            }
+            &.btn-5 {
+              left: auto;
+              bottom: auto;
+              top: 110px;
+              right: 235px;
+            }
+            &.btn-6 {
+              top: 190px;
+              left: auto;
+              right: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//destini-125
+.features-section-main {
+  &.scooter-features-main {
+    &.destini-125 {
+      .features-section-wrapper {
+        .features-box-wrapper {
+          .features-box-main {
+            .features-box {
+              &.feature-1.active::before {
+                height: 145px;
+                left: 120px;
+                top: 282px;
+              }
+              &.feature-1.active::after {
+                width: 367px;
+                top: 427px;
+              }
+              &.feature-2.active::before {
+                content: none;
+              }
+              &.feature-2.active::after {
+                top: 217px;
+                right: 170px;
+                width: 250px;
+              }
+              &.feature-3.active::before {
+                height: 133px;
+                left: 120px;
+                top: 285px;
+              }
+              &.feature-3.active::after {
+                left: auto;
+                right: 134px;
+                top: 413px;
+                width: 693px;
+              }
+
+              &.feature-4.active::before {
+                content: "";
+                height: 183px;
+                left: 120px;
+                top: 282px;
+              }
+              &.feature-4.active::after {
+                left: auto;
+                right: 134px;
+                width: 718px;
+                top: auto;
+                bottom: -182px;
+              }
+              &.feature-5.active::before {
+                height: 181px;
+                left: 120px;
+                top: 308px;
+              }
+              &.feature-5.active::after {
+                width: 768px;
+                top: 487px;
+              }
+              &.feature-6.active::before {
+                content: none;
+              }
+              &.feature-6.active::after {
+                right: 100px;
+                width: 680px;
+                top: 168px;
+              }
+
+              &.feature-7.active::before {
+                content: none;
+              }
+              &.feature-7.active::after {
+                content: "";
+                right: 100px;
+                width: 643px;
+                top: 122px;
+                height: 2px;
+              }
+            }
+          }
+        }
+
+        .features-bike-main {
+          margin-top: 75px;
+          .feature-btn {
+            &.btn-1 {
+              top: 330px;
+              left: 440px;
+            }
+            &.btn-2 {
+              bottom: 45px;
+              left: 40px;
+            }
+            &.btn-3 {
+              bottom: 120px;
+              left: 115px;
+            }
+            &.btn-4 {
+              top: 30px;
+
+              left: 200px;
+            }
+            &.btn-5 {
+              top: 125px;
+              bottom: auto;
+              right: 160px;
+              left: auto;
+            }
+            &.btn-6 {
+              top: 75px;
+              left: 160px;
+            }
+            &.btn-7 {
+              bottom: 70px;
+              left: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.near-you-section {
+  .near-you-wrapper {
+    .near-you-left {
+         h3{
+        margin-left: -10px;
+      }
+      .near-you-content {
+        .near-you-p{
+          margin-left: -10px;
+        }
+      }
+    }
+  }
+}
+.near-you-section .near-you-wrapper2 .near-you-right .near-you-slider .near-you-common-div .near-you-info{
+min-height: 112px;
+}
+// media quiries ===========================
+
+@media (max-width: 1199px) {
+  // pleasure xtec
+  .features-section-main {
+    &.scooter-features-main {
+      &.pleasure-xtech {
+        .features-section-wrapper {
+          justify-content: flex-end;
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::after {
+                  width: 365px;
+                }
+
+                &.feature-2.active::after {
+                  width: 625px;
+                }
+                &.feature-3.active::after {
+                  width: 504px;
+                }
+                &.feature-4.active::after {
+                  width: 465px;
+                }
+
+                &.feature-5.active::after {
+                  width: 485px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // maestro 110
+  .features-section-main {
+    &.scooter-features-main {
+      &.maestro-110 {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::after {
+                  width: 327px;
+                }
+
+                &.feature-2.active::after {
+                  width: 607px;
+                }
+
+                &.feature-3.active::after {
+                  width: 587px;
+                }
+                &.feature-4.active::before {
+                  left: -375px;
+                }
+                &.feature-4.active::after {
+                  right: 230px;
+                }
+
+                &.feature-5.active::after {
+                  width: 533px;
+                }
+                &.feature-6.active::before {
+                  content: none;
+                }
+                &.feature-6.active::after {
+                  width: 355px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //destini-125-xtech
+  .features-section-main {
+    &.scooter-features-main {
+      &.destini-125-xtech {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 40px;
+                }
+                &.feature-1.active::after {
+                  width: 318px;
+                  top: 347px;
+                }
+                &.feature-2.active::before {
+                  content: none;
+                }
+                &.feature-2.active::after {
+                  top: 123px;
+                  width: 440px;
+                }
+                &.feature-3.active::before {
+                  content: none;
+                }
+                &.feature-3.active::after {
+                  top: 93px;
+                  width: 442px;
+                }
+                &.feature-4.active::after {
+                  width: 392px;
+                  top: 218px;
+                }
+                &.feature-5.active::before {
+                  content: none;
+                }
+                &.feature-5.active::after {
+                  top: 105px;
+                  right: 110px;
+                  width: 360px;
+                }
+                &.feature-6.active::before {
+                  content: none;
+                }
+                &.feature-6.active::after {
+                  right: 100px;
+                  width: 280px;
+                  top: 162px;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            .feature-btn {
+              &.btn-1 {
+                top: 330px;
+                left: 350px;
+              }
+              &.btn-2 {
+                bottom: 192px;
+                left: 208px;
+              }
+              &.btn-3 {
+                left: 220px;
+                top: 75px;
+              }
+              &.btn-4 {
+                top: 105px;
+                left: 190px;
+              }
+              &.btn-5 {
+                top: 87px;
+                right: 208px;
+              }
+              &.btn-6 {
+                top: 145px;
+
+                right: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // destini 125
+  .features-section-main {
+    &.scooter-features-main {
+      &.destini-125 {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 62px;
+                }
+                &.feature-1.active::after {
+                  width: 320px;
+                  top: 343px;
+                }
+                &.feature-2.active::before {
+                  content: none;
+                }
+                &.feature-2.active::after {
+                  top: 185px;
+                  right: 160px;
+                }
+                &.feature-3.active::before {
+                  height: 32px;
+                }
+                &.feature-3.active::after {
+                  top: 315px;
+                  width: 570px;
+                }
+
+                &.feature-4.active::before {
+                  height: 95px;
+                }
+                &.feature-4.active::after {
+                  width: 595px;
+                  bottom: -95px;
+                }
+                &.feature-5.active::before {
+                  height: 82px;
+                }
+                &.feature-5.active::after {
+                  width: 640px;
+                  top: 390px;
+                }
+                &.feature-6.active::before {
+                  content: none;
+                }
+                &.feature-6.active::after {
+                  width: 585px;
+                  top: 142px;
+                }
+
+                &.feature-7.active::before {
+                  content: none;
+                }
+                &.feature-7.active::after {
+                  width: 555px;
+                  top: 120px;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            margin-top: 75px;
+            .feature-btn {
+              &.btn-1 {
+                top: 250px;
+                left: 350px;
+              }
+              &.btn-2 {
+                bottom: 35px;
+                left: 30px;
+              }
+              &.btn-3 {
+                bottom: 110px;
+                left: 100px;
+              }
+              &.btn-4 {
+                top: 25px;
+                left: 150px;
+              }
+              &.btn-5 {
+                top: 95px;
+                right: 150px;
+              }
+              &.btn-6 {
+                top: 50px;
+                left: 120px;
+              }
+              &.btn-7 {
+                bottom: 50px;
+                left: 75px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #scooterBanner {
+    .scooter-banner-slide {
+      .slider-content {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        width: 100%;
+        padding-left: 100px;
+        font-size: var(--font-size16);
+        z-index: 3;
+        h1 {
+          font-size: var(--font-size28);
+        }
+      }
+    }
+    .carousel-indicators {
+      bottom: 40px;
+      z-index: 3;
+      margin: 0;
+      padding-left: 100px;
+      li {
+        background-color: #f5f6f7;
+        &.active {
+          background: var(--bg-color-danger);
+        }
+      }
+    }
+    .scroll-button {
+      bottom: 20px;
+
+      img {
+        transition: all 300ms ease-in;
+        max-width: 40px;
+      }
+    }
+  }
+
+  .scooter-rotate-section {
+    .bike-rotate-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      .bike-rotate-color-section {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 3;
+        .title-text {
+          color: #70a928;
+          font-family: var(--font-montserrat-bold);
+          margin-bottom: 10px;
+          padding-left: 10px;
+        }
+        .nav-tabs {
+          flex-direction: row;
+          border: 0;
+          max-height: none;
+          overflow-x: auto;
+          overflow-y: hidden;
+          direction: ltr;
+          padding-bottom: 10px;
+
+          .nav-item {
+            direction: rtl;
+            .nav-link {
+              font-size: var(--font-size28);
+              white-space: nowrap;
+              line-height: 1;
+            }
+          }
+        }
+      }
+      .explore-360-wrapper-main {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+        position: relative;
+      }
+      .explore-360-btn-main {
+        order: 3;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 20px;
+      }
+      .rotate-bike-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 4;
+        display: flex;
+        margin-top: 30px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        .rotate-bike-div {
+          display: flex;
+          max-width: 200px;
+
+          img {
+            margin-right: 10px;
+            max-width: 60px;
+          }
+          & + .rotate-bike-div {
+            margin-top: 00px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .scooter-specifications {
+    .inner {
+      .content {
+        padding: 50px 40px;
+        h2 {
+          font-size: var(--font-size28);
+        }
+        .sub-text {
+          font-size: var(--font-size16);
+        }
+        .specifications-list {
+          margin: 50px 0;
+          li {
+            flex: 0 0 49%;
+            margin-bottom: 30px;
+            font-size: var(--font-size14);
+            h4 {
+              font-size: var(--font-size16);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .product-highlighted-features {
+    padding: 50px 0;
+
+    .tab-inner {
+      display: flex;
+      align-items: center;
+      .info-panel {
+        flex: 0 0 60%;
+        max-width: 60%;
+        h4 {
+          font-size: var(--font-size20);
+        }
+        h2 {
+          font-size: var(--font-size32);
+        }
+        p {
+          font-size: var(--font-size20);
+        }
+      }
+      .img-panel {
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
+    }
+  }
+
+  .hero-connect-benefits {
+    .carousel-indicators {
+      li {
+        padding-left: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+    .carousel-item {
+      h3 {
+        bottom: 50px;
+        font-size: var(--font-size32);
+      }
+    }
+  }
+
+  .designed-for-roads {
+    background-color: var(--bg-color-grey-2);
+    padding: 50px 0;
+    .inner {
+      .left {
+        h2 {
+          font-size: var(--font-size48);
+          font-family: var(--font-tstar-heavy);
+          max-width: 500px;
+          line-height: 1.2;
+          text-align: center;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .right {
+        flex: 0 0 100%;
+        max-width: 100%;
+        .road-feature {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+
+  .prise-section {
+    &.scooter-price-maestro {
+      max-width: 1400px;
+
+      .prise-wrapper {
+        .prise-right-div {
+          padding-top: 0;
+          display: block;
+        }
+        .prise-left-div {
+          padding: 25px 15px;
+
+          h2 {
+            font-size: var(--font-size32);
+          }
+          .prise-h3 {
+            padding-top: 0;
+          }
+        }
+      }
+      .prise-form-content {
+        .common-cta {
+          padding: 15px 0px;
+        }
+      }
+    }
+  }
+
+  .features-section-main {
+    &.scooter-features-main {
+      padding: 25px 15px;
+      h2 {
+        font-size: var(--font-size32);
+      }
+      .features-section-wrapper {
+        justify-content: flex-end;
+        .features-box-wrapper {
+          h3 {
+            position: static;
+            margin-top: 10px;
+            font-size: var(--font-size58);
+          }
+          .features-box-main {
+            margin-left: 100px;
+            .features-box {
+              background: #ffffff;
+              box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+              border-radius: 5px;
+              z-index: 2;
+              &::before,
+              &::after {
+                background-color: #000000;
+              }
+              &.feature-1.active::before {
+                height: 112px;
+                left: 240px;
+                top: -112px;
+              }
+              &.feature-1.active::after {
+                content: none;
+              }
+              &.feature-2.active::before {
+                height: 148px;
+                left: -31px;
+                top: -47px;
+              }
+              &.feature-2.active::after {
+                left: auto;
+                top: 100px;
+                right: 257px;
+                width: 130px;
+              }
+              &.feature-3.active::before {
+                height: 200px;
+                left: -15px;
+                top: -100px;
+              }
+              &.feature-3.active::after {
+                left: auto;
+                top: 100px;
+                right: 257px;
+                width: 114px;
+              }
+              &.feature-4.active::before {
+                content: "";
+                height: 550px;
+                left: 93px;
+                top: -463px;
+              }
+              &.feature-4.active::after {
+                left: auto;
+                right: 242px;
+                width: 20px;
+                top: 85px;
+              }
+              &.feature-5.active::before {
+                height: 285px;
+                left: 55px;
+                top: -200px;
+              }
+              &.feature-5.active::after {
+                left: auto;
+                right: 242px;
+                width: 59px;
+                top: 85px;
+              }
+              &.feature-6.active::before {
+                content: "";
+                height: 510px;
+                left: 54px;
+                top: -422px;
+                width: 2px;
+              }
+              &.feature-6.active::after {
+                left: auto;
+                right: 242px;
+                width: 60px;
+                top: 85px;
+              }
+              > img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // pleasure xtech
+  .features-section-main {
+    &.scooter-features-main {
+      &.pleasure-xtech {
+        .features-section-wrapper {
+          justify-content: flex-end;
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 88px;
+                  left: 222px;
+                  top: -87px;
+                }
+
+                &.feature-2.active::before {
+                  height: 160px;
+                  left: -37px;
+                  top: -50px;
+                }
+                &.feature-2.active::after {
+                  top: 108px;
+                  right: 192px;
+                  width: 200px;
+                }
+                &.feature-3.active::before {
+                  content: "";
+                  height: 400px;
+                  left: 83px;
+                  top: -340px;
+                }
+                &.feature-3.active::after {
+                  right: 255px;
+                  top: 60px;
+                  width: 18px;
+                }
+                &.feature-4.active::before {
+                  content: "";
+                  height: 398px;
+                  left: 123px;
+                  top: -397px;
+                }
+                &.feature-4.active::after {
+                  content: none;
+                }
+                &.feature-5.active::before {
+                  content: "";
+                  top: -226px;
+                  left: 103px;
+                  height: 227px;
+                }
+                &.feature-5.active::after {
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // maestro 110
+  .features-section-main {
+    &.scooter-features-main {
+      &.maestro-110 {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 102px;
+                  left: 260px;
+                  top: -102px;
+                }
+                &.feature-2.active::before {
+                  height: 125px;
+                  left: -20px;
+                  top: -20px;
+                }
+                &.feature-2.active::after {
+                  top: 103px;
+                  width: 242px;
+                }
+
+                &.feature-3.active::before {
+                  height: 200px;
+                  left: 0px;
+                  top: -100px;
+                }
+
+                &.feature-3.active::after {
+                  width: 220px;
+                  top: 98px;
+                }
+                &.feature-4.active::before {
+                  left: 108px;
+                  height: 413px;
+                  top: -412px;
+                }
+                &.feature-4.active::after {
+                  content: none;
+                }
+                &.feature-5.active::before {
+                  height: 270px;
+                  left: 54px;
+                  top: -160px;
+                }
+                &.feature-5.active::after {
+                  top: 108px;
+                  width: 168px;
+                }
+                &.feature-6.active::before {
+                  content: "";
+                  height: 203px;
+                  left: 110px;
+                  top: -202px;
+                }
+                &.feature-6.active::after {
+                  content: none;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            .feature-btn {
+              &.btn-1 {
+                top: 340px;
+                left: 340px;
+              }
+              &.btn-2 {
+                bottom: 20px;
+                left: 60px;
+              }
+              &.btn-3 {
+                bottom: 100px;
+                left: 80px;
+              }
+              &.btn-4 {
+                top: 30px;
+                left: 190px;
+              }
+              &.btn-5 {
+                bottom: 160px;
+                left: 135px;
+              }
+              &.btn-6 {
+                top: 240px;
+                left: 190px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //destini-125-xtech
+  .features-section-main {
+    &.scooter-features-main {
+      &.destini-125-xtech {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              margin-top: 50px;
+              .features-box {
+                &.feature-1.active::before {
+                  height: 133px;
+                  left: 296px;
+                  top: -83px;
+                }
+                &.feature-1.active::after {
+                  width: 318px;
+                  top: 347px;
+                }
+                &.feature-2.active::before {
+                  content: "";
+                  height: 423px;
+                  left: 110px;
+                  top: -370px;
+                }
+                &.feature-2.active::after {
+                  content: none;
+                }
+                &.feature-3.active::before {
+                  content: "";
+                  height: 456px;
+                  left: 121px;
+                  top: -405px;
+                }
+                &.feature-3.active::after {
+                  content: none;
+                }
+                &.feature-4.active::before {
+                  top: -235px;
+                  left: 106px;
+                  height: 285px;
+                }
+                &.feature-4.active::after {
+                  content: none;
+                }
+                &.feature-5.active::before {
+                  content: "";
+                  height: 446px;
+                  left: 270px;
+                  top: -395px;
+                }
+                &.feature-5.active::after {
+                  content: none;
+                }
+                &.feature-6.active::before {
+                  content: "";
+                  height: 510px;
+                  left: 375px;
+                  top: -325px;
+                }
+                &.feature-6.active::after {
+                  right: -21px;
+                  width: 50px;
+                  top: 183px;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            .feature-btn {
+              &.btn-1 {
+                top: 420px;
+                left: 450px;
+              }
+              &.btn-2 {
+                bottom: 230px;
+                left: 260px;
+              }
+              &.btn-3 {
+                left: 275px;
+                top: 100px;
+              }
+              &.btn-4 {
+                top: 135px;
+                left: 260px;
+              }
+              &.btn-5 {
+                top: 110px;
+                right: 240px;
+              }
+              &.btn-6 {
+                top: 180px;
+                right: 135px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // destini 125
+  .features-section-main {
+    &.scooter-features-main {
+      &.destini-125 {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 110px;
+                  left: 275px;
+                  top: -108px;
+                }
+
+                &.feature-2.active::before {
+                  content: "";
+                  left: auto;
+                  right: 5px;
+                  top: -310px;
+                  height: 312px;
+                }
+                &.feature-2.active::after {
+                  content: none;
+                }
+                &.feature-3.active::before {
+                  left: -40px;
+                  top: -114px;
+                  height: 215px;
+                }
+                &.feature-3.active::after {
+                  top: 100px;
+                  width: 262px;
+                }
+
+                &.feature-4.active::before {
+                  left: -65px;
+                  top: -58px;
+                  height: 151px;
+                }
+                &.feature-4.active::after {
+                  width: 285px;
+                  bottom: 200px;
+                }
+                &.feature-5.active::before {
+                  left: -115px;
+                  top: -33px;
+                  height: 134px;
+                }
+                &.feature-5.active::after {
+                  width: 229px;
+                  top: 100px;
+                }
+                &.feature-6.active::before {
+                  content: "";
+
+                  height: 508px;
+                  left: 0px;
+                  top: -365px;
+                }
+                &.feature-6.active::after {
+                  width: 255px;
+                }
+
+                &.feature-7.active::before {
+                  content: "";
+                  width: 2px;
+                  height: 500px;
+                  top: -405px;
+                  left: 41px;
+                }
+                &.feature-7.active::after {
+                  width: 215px;
+                  top: 94px;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            margin-top: 0px;
+            .feature-btn {
+              &.btn-1 {
+                top: 320px;
+                left: 430px;
+              }
+              &.btn-2 {
+                bottom: 30px;
+                left: 40px;
+              }
+              &.btn-3 {
+                bottom: 110px;
+                left: 115px;
+              }
+              &.btn-4 {
+                left: 195px;
+              }
+              &.btn-5 {
+                top: 120px;
+                right: 155px;
+              }
+              &.btn-6 {
+                top: 65px;
+                left: 155px;
+              }
+              &.btn-7 {
+                bottom: 55px;
+                left: 90px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #scooterBanner {
+    margin-top: 115px;
+    .scooter-banner-slide {
+      .slider-content {
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        font-size: var(--font-size14);
+        z-index: 3;
+        h1 {
+          font-size: var(--font-size24);
+
+          font-family: var(--font-tstar-heavy);
+        }
+        p {
+          max-width: 250px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .carousel-indicators {
+      padding-left: 15px;
+    }
+    .scroll-button {
+      bottom: 10px;
+      img {
+        max-width: 24px;
+      }
+    }
+  }
+
+  .scooter-rotate-section {
+    padding-bottom: 0;
+    .bike-rotate-wrapper {
+      .bike-rotate-color-section {
+        .title-text {
+          margin-bottom: 0;
+          font-size: var(--font-size12);
+        }
+        .nav-tabs {
+          .nav-item {
+            .nav-link {
+              font-size: var(--font-size18);
+            }
+          }
+        }
+      }
+
+      .explore-360-wrapper-main {
+        .rotate-arrow {
+          img {
+            max-width: 30px;
+          }
+        }
+        .explore-360-view {
+          max-width: 300px;
+          height: 200px !important;
+        }
+      }
+      .explore-360-btn-main {
+        .btn {
+          img {
+            max-width: 25px;
+            margin-left: 10px;
+          }
+        }
+      }
+      .rotate-bike-info {
+        margin-top: 15px;
+        .rotate-bike-div {
+          align-items: center;
+          font-size: var(--font-size18);
+          flex: 0 0 150px;
+          img {
+            margin-right: 10px;
+            max-width: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .news-n-blogs {
+    &.news-n-blogs-scooter {
+      margin-top: 0px;
+      .event-blog-box {
+        .content {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+
+  .scooter-specifications {
+    .inner {
+      .content {
+        padding: 30px 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 2;
+        h2 {
+          text-align: center;
+          margin-bottom: 20px;
+          line-height: 1.4;
+        }
+        .sub-text {
+          font-size: var(--font-size14);
+          text-align: center;
+        }
+        .specifications-list {
+          margin: 25px 0;
+          li {
+            font-size: var(--font-size12);
+            align-items: flex-start !important;
+            h4 {
+              font-size: var(--font-size18);
+            }
+            .icon-box {
+              margin-right: 10px;
+
+              img {
+                max-width: 30px;
+              }
+            }
+          }
+        }
+      }
+      .action {
+        .share-btn {
+          img {
+            max-width: 34px;
+          }
+        }
+      }
+      .img-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 1;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .product-highlighted-features {
+    padding: 50px 0;
+    .nav-tabs {
+      margin-bottom: 25px;
+      .nav-item {
+        flex-grow: 1;
+
+        .nav-link {
+          font-size: var(--font-size14);
+          .icon {
+            margin-right: 10px;
+            img {
+              max-width: 40px;
+            }
+          }
+          &.active,
+          &:hover {
+            background: rgba(112, 169, 40, 0.4);
+            font-family: var(--font-tstar-heavy);
+            color: var(--text-color-black);
+          }
+        }
+      }
+    }
+    .tab-inner {
+      flex-wrap: wrap;
+      .info-panel {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        h4 {
+          font-size: var(--font-size18);
+          margin-bottom: 15px;
+        }
+        h2 {
+          font-size: var(--font-size28);
+        }
+        p {
+          font-size: var(--font-size16);
+        }
+      }
+      .img-panel {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 30px;
+        img {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+  .hero-connect-benefits {
+    .carousel-indicators {
+      li {
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: var(--font-size14);
+        img {
+          max-width: 25px;
+        }
+      }
+    }
+    .carousel-item {
+      h2 {
+        font-size: var(--font-size28);
+      }
+      h3 {
+        bottom: 25px;
+        font-size: var(--font-size28);
+        text-shadow: -0.5px 0.5px 0 var(--text-color-white),
+          0.5px 0.5px 0 var(--text-color-white),
+          0.5px -0.5px 0 var(--text-color-white),
+          -0.5px -0.5px 0 var(--text-color-white);
+      }
+    }
+  }
+
+  .designed-for-roads {
+    padding: 20px 0;
+    .inner {
+      .left {
+        h2 {
+          font-size: var(--font-size48);
+          font-family: var(--font-tstar-heavy);
+          max-width: 300px;
+          line-height: 1.2;
+          text-align: left;
+          margin: 0;
+          margin-bottom: 20px;
+        }
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .right {
+        flex: 0 0 100%;
+        max-width: 100%;
+        .road-feature {
+          padding: 0;
+          flex: 0 0 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .prise-section {
+    &.scooter-price-maestro {
+      .prise-wrapper {
+        flex-wrap: wrap;
+        .prise-right-div {
+          flex: 0 0 100%;
+          max-width: 100%;
+          order: 2;
+          img {
+            width: 100%;
+          }
+        }
+
+        .prise-left-div {
+          padding: 25px 15px;
+          flex: 0 0 100%;
+          max-width: 100%;
+          order: 1;
+          padding-bottom: 0;
+
+          h2 {
+            font-size: var(--font-size28);
+          }
+
+          .prise-form {
+            .prise-form-info {
+              padding: 0;
+              width: 100%;
+              .common-cta {
+                margin: 0 auto;
+              }
+              .prise-form-content:nth-child(2) {
+                margin-left: auto;
+              }
+            }
+            .prise-form-dropdown-div {
+              padding: 0;
+              .cust-form-group {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .prise-form-content {
+        .common-cta {
+          padding: 15px 0px;
+        }
+      }
+    }
+  }
+
+  .hero-exchange {
+    &.hero-exchange-maestro {
+      .hero-exchange-wrapper {
+        .hero-exchange-content {
+          .hero-exchange-head-content {
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .features-section-main {
+    &.scooter-features-main {
+      h2 {
+        font-size: var(--font-size28);
+      }
+      .features-section-wrapper {
+        justify-content: center;
+        // max-width: none;
+        .features-box-wrapper {
+          h3 {
+            font-size: var(--font-size38);
+          }
+          .features-box-main {
+            margin-left: 100px;
+            .features-box {
+              &.feature-1.active::before {
+                height: 70px;
+                left: 190px;
+                top: -70px;
+              }
+
+              &.feature-2.active::before {
+                height: 130px;
+                left: 15px;
+                top: -30px;
+              }
+              &.feature-2.active::after {
+                top: 100px;
+                right: 155px;
+                width: 85px;
+              }
+              &.feature-3.active::before {
+                height: 170px;
+                left: 40px;
+                top: -70px;
+                width: 1px;
+              }
+              &.feature-3.active::after {
+                top: 100px;
+                right: 150px;
+                width: 65px;
+              }
+              &.feature-4.active::before {
+                content: "";
+                height: 290px;
+                left: 105px;
+                top: -290px;
+              }
+              &.feature-4.active::after {
+                content: none;
+              }
+              &.feature-5.active::before {
+                height: 200px;
+                left: 65px;
+                top: -130px;
+                width: 1px;
+              }
+              &.feature-5.active::after {
+                left: auto;
+                right: 155px;
+                width: 35px;
+                top: 70px;
+              }
+              &.feature-6.active::before {
+                content: "";
+                height: 350px;
+                left: 90px;
+                top: -257px;
+                width: 1px;
+              }
+              &.feature-6.active::after {
+                left: auto;
+                right: 155px;
+                width: 60px;
+                top: 92px;
+                width: 10px;
+                height: 1px;
+              }
+
+              .features-box-info {
+                padding: 5px;
+                p {
+                  font-family: var(--font-tstar-bold);
+                  font-size: var(--font-size14);
+                  font-style: normal;
+                }
+                h4 {
+                  font-size: var(--font-size20);
+                  font-family: var(--font-tstar-heavy);
+                }
+                .badge {
+                  justify-content: flex-start;
+                }
+              }
+            }
+          }
+        }
+
+        .features-bike-main {
+          margin-bottom: 0;
+          padding-right: 0px;
+          .feature-btn {
+            &.btn-1 {
+              top: 240px;
+              left: 200px;
+            }
+            &.btn-2 {
+              bottom: 30px;
+              left: 25px;
+            }
+            &.btn-3 {
+              bottom: 70px;
+              left: 50px;
+            }
+            &.btn-4 {
+              top: 20px;
+              right: auto;
+              left: 115px;
+            }
+            &.btn-5 {
+              top: 180px;
+              right: auto;
+              left: 75px;
+            }
+            &.btn-6 {
+              top: 55px;
+              right: auto;
+              left: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .compare-bike-section {
+    &.compare-scooter-section {
+      .compare-bike-wrappper {
+        .compare-bike-header {
+          padding: 15px;
+        }
+        .bike-compare-div {
+          .compare-bike-info {
+            .compare-bike-mob-div {
+              img {
+                max-width: 35%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .near-you-section {
+    .near-you-wrapper {
+      .near-you-left {
+        padding: 0;
+      }
+    }
+  }
+  .near-you-section {
+    .near-you-wrapper {
+      .near-you-left {
+        .near-you-content {
+          .near-you-form {
+            .current-location-wrapper {
+              a {
+                flex: 0 0 50%;
+                padding-left: 10px;
+              }
+              .location-p {
+                font-size: var(--font-size14);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .near-you-section {
+    .near-you-wrapper2 {
+      .near-you-right {
+        .near-you-wapper {
+          .near-you-slider {
+            .slick-dots {
+              bottom: -5px;
+              li {
+                height: 10px;
+                width: 10px;
+                button:before {
+                  font-size: 12px;
+                }
+                &.active {
+                  button:before {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // pleasure xtec
+  .features-section-main {
+    &.scooter-features-main {
+      &.pleasure-xtech {
+        .features-section-wrapper {
+          justify-content: flex-end;
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 50px;
+                  left: 190px;
+                  top: -50px;
+                }
+
+                &.feature-2.active::before {
+                  height: 100px;
+                  left: 11px;
+                  top: -30px;
+                }
+                &.feature-2.active::after {
+                  top: 70px;
+                  right: 155px;
+                  width: 89px;
+                }
+                &.feature-3.active::before {
+                  content: "";
+                  height: 221px;
+                  left: 101px;
+                  top: -220px;
+                }
+                &.feature-3.active::after {
+                  content: none;
+                }
+                &.feature-4.active::before {
+                  height: 260px;
+                  left: 120px;
+                  top: -260px;
+                }
+
+                &.feature-5.active::before {
+                  top: -140px;
+                  left: 110px;
+                  height: 140px;
+                }
+              }
+            }
+          }
+          .features-bike-main {
+            .feature-btn {
+              &.btn-1 {
+                top: 260px;
+                left: 200px;
+              }
+              &.btn-2 {
+                bottom: 30px;
+                left: 20px;
+              }
+              &.btn-3 {
+                bottom: 220px;
+                left: 110px;
+              }
+              &.btn-4 {
+                top: 50px;
+                left: 130px;
+              }
+              &.btn-5 {
+                bottom: 140px;
+                left: 120px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // maestro 110
+  .features-section-main {
+    &.scooter-features-main {
+      &.maestro-110 {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 67px;
+                  left: 210px;
+                  top: -67px;
+                }
+                &.feature-2.active::before {
+                  height: 124px;
+                  left: 20px;
+                }
+                &.feature-2.active::after {
+                  width: 101px;
+                }
+
+                &.feature-3.active::before {
+                  height: 154px;
+                  left: 51px;
+                  top: -55px;
+                }
+
+                &.feature-3.active::after {
+                  width: 70px;
+                }
+                &.feature-4.active::before {
+                  left: 111px;
+                  height: 269px;
+                  top: -267px;
+                }
+                &.feature-4.active::after {
+                  content: none;
+                }
+                &.feature-5.active::before {
+                  height: 217px;
+                  left: 81px;
+                  top: -108px;
+                }
+                &.feature-5.active::after {
+                  width: 40px;
+                }
+                &.feature-6.active::before {
+                  height: 128px;
+                  left: 121px;
+                  top: -127px;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            .feature-btn {
+              &.btn-1 {
+                top: 220px;
+                left: 220px;
+              }
+              &.btn-2 {
+                left: 30px;
+              }
+              &.btn-3 {
+                bottom: 55px;
+                left: 60px;
+              }
+              &.btn-4 {
+                top: 20px;
+                left: 120px;
+              }
+              &.btn-5 {
+                left: 90px;
+              }
+              &.btn-6 {
+                top: 160px;
+                left: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //destini-125-xtech
+  .features-section-main {
+    &.scooter-features-main {
+      &.destini-125-xtech {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              margin-top: 50px;
+              .features-box {
+                &.feature-1.active::before {
+                  height: 96px;
+                  left: 210px;
+                  top: -45px;
+                }
+                &.feature-1.active::after {
+                  width: 318px;
+                  top: 347px;
+                }
+                &.feature-2.active::before {
+                  height: 235px;
+                  left: 112px;
+                  top: -184px;
+                }
+                &.feature-2.active::after {
+                  content: none;
+                }
+                &.feature-3.active::before {
+                  content: "";
+                  height: 456px;
+                  left: 121px;
+                  top: -405px;
+                }
+                &.feature-3.active::after {
+                  content: none;
+                }
+                &.feature-4.active::before {
+                  top: -122px;
+                  left: 120px;
+                  height: 173px;
+                }
+                &.feature-4.active::after {
+                  content: none;
+                }
+                &.feature-5.active::before {
+                  height: 246px;
+                  left: 195px;
+                  top: -195px;
+                }
+                &.feature-5.active::after {
+                  content: none;
+                }
+                &.feature-6.active::before {
+                  height: 208px;
+                  left: 245px;
+                  top: -158px;
+                }
+                &.feature-6.active::after {
+                  content: none;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            .feature-btn {
+              &.btn-1 {
+                left: 220px;
+                top: 200px;
+              }
+              &.btn-2 {
+                bottom: 120px;
+                left: 130px;
+              }
+              &.btn-3 {
+                left: 140px;
+                top: 35px;
+              }
+              &.btn-4 {
+                top: 60px;
+                left: 121px;
+              }
+              &.btn-5 {
+                top: 50px;
+                right: 70px;
+              }
+              &.btn-6 {
+                top: 85px;
+                right: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // destini 125
+  .features-section-main {
+    &.scooter-features-main {
+      &.destini-125 {
+        .features-section-wrapper {
+          .features-box-wrapper {
+            .features-box-main {
+              .features-box {
+                &.feature-1.active::before {
+                  height: 56px;
+                  left: 200px;
+                  top: -55px;
+                }
+
+                &.feature-2.active::before {
+                  top: -145px;
+                  height: 145px;
+                }
+                &.feature-2.active::after {
+                  content: none;
+                }
+                &.feature-3.active::before {
+                  left: 50px;
+                  top: -84px;
+                  height: 185px;
+                }
+                &.feature-3.active::after {
+                  width: 70px;
+                }
+
+                &.feature-4.active::before {
+                  left: 36px;
+                  top: -35px;
+                  height: 100px;
+                }
+                &.feature-4.active::after {
+                  content: "";
+                  width: 84px;
+                  bottom: 157px;
+                }
+                &.feature-5.active::before {
+                  content: "";
+                  left: 0;
+                }
+                &.feature-5.active::after {
+                  width: 100px;
+                }
+                &.feature-6.active::before {
+                  height: 322px;
+                  left: 65px;
+                  top: -180px;
+                }
+                &.feature-6.active::after {
+                  width: 90px;
+                }
+
+                &.feature-7.active::before {
+                  width: 1px;
+                  height: 296px;
+                  top: -200px;
+                  left: 90px;
+                }
+                &.feature-7.active::after {
+                  width: 65px;
+                  top: 96px;
+                  height: 1px;
+                }
+              }
+            }
+          }
+
+          .features-bike-main {
+            margin-top: 0px;
+            .feature-btn {
+              &.btn-1 {
+                top: 150px;
+                left: 210px;
+              }
+              &.btn-2 {
+                bottom: 25px;
+                left: 10px;
+              }
+              &.btn-3 {
+                bottom: 80px;
+                left: 60px;
+              }
+              &.btn-4 {
+                left: 100px;
+                top: 5px;
+              }
+              &.btn-5 {
+                top: 60px;
+                right: 15px;
+              }
+              &.btn-6 {
+                top: 25px;
+                left: 75px;
+              }
+              &.btn-7 {
+                bottom: 30px;
+                left: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .emi-section {
+    .emi-wrapper {
+      .payment-section {
+        .payment-div {
+          .common-cta {
+            padding-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #scooterBanner {
+    margin-top: 115px;
+    .scooter-banner-slide {
+      .slider-content {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        font-size: var(--font-size14);
+        z-index: 3;
+        h1 {
+          font-size: var(--font-size18);
+          font-family: var(--font-tstar-heavy);
+        }
+        p {
+          font-size: var(--font-size10);
+          max-width: 170px;
+          margin-bottom: 10px;
+        }
+      }
+      .banner-img {
+        min-height: 320px;
+      }
+      video {
+        height: 320px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    .carousel-indicators {
+      padding-left: 15px;
+      bottom: 45px;
+    }
+    .scroll-button {
+      bottom: 10px;
+      img {
+        max-width: 24px;
+      }
+    }
+  }
+  .product-highlighted-features {
+    padding: 50px 0 10px;
+    .tab-inner {
+      flex-wrap: wrap;
+      .info-panel {
+        h4 {
+          font-size: var(--font-size16);
+        }
+        h2 {
+          font-size: var(--font-size28);
+        }
+        p {
+          font-size: var(--font-size14);
+        }
+      }
+      .img-panel {
+        img {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+
+  .hero-connect-benefits {
+    .carousel-indicators {
+      left: 15px;
+      li {
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: var(--font-size12);
+        img {
+          max-width: 20px;
+        }
+      }
+    }
+    .carousel-item {
+      h3 {
+        bottom: 15px;
+        font-size: var(--font-size18);
+      }
+      img {
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .scooter-rotate-section {
+    .bike-rotate-wrapper {
+      .explore-360-wrapper-main {
+        .rotate-arrow {
+          left: 5px;
+          &.right-arrow {
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
